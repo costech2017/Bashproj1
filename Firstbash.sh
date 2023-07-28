@@ -10,13 +10,13 @@ echo "Enter your Last Name:"
 
 read last_name
 
-echo "Enter Username:"
+echo "Create a Username:"
 
-read user_name
+read -p "user_name:" user_var
 
 echo "Create Password:"
 
-read pass_word
+read -sp "pass_word:" pass_var
 
 echo
 
@@ -26,14 +26,13 @@ echo $first_name, $last_name
 
 echo
 
-echo "Your Username is:"
+echo "Your Username is:" $user_var
 
-echo $user_name
 
 echo
 
-echo "Login Password:"
+echo "Login Password is:" $pass_var
 
-echo $pass_word
+
 
 echo "Welcome to Poltech Solutions"
